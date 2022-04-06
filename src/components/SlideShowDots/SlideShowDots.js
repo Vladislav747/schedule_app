@@ -1,20 +1,19 @@
 import React from "react";
 import "./SlideShowDots.css";
 
-export const SlideShowDots = (props) => {
-  // console.log(props, "props")
+export const SlideShowDots = ({dots, currentIndex, setCurrent}) => {
   return ( 
     <div className="slideshowDots">
-      {props.dots.map((_, idx) => (
+      {dots.map((_, idx) => (
         <div
           key={idx}
           className={`slideshowDot${
-            props.currentIndex === idx ? " active" : ""
+            currentIndex === idx ? " active" : ""
           }`}
           onClick={() => {
-            props.setCurrent(idx);
+            setCurrent(idx);
           }}
-        ></div>
+        />
       ))}
     </div>
   );
