@@ -1,11 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Ball.css'
 
 
 
 function Ball() {
-
-const [loaderVisible, setLoaderVisible] = useState(false)
 
   return (
     <div className='Ball'>

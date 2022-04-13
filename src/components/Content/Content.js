@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
+
 import Block from "../Block/Block";
-import ContentBottom from "../ContentBottom/ContentBottom";
 import SlideShowDots from "../SlideShowDots/SlideShowDots";
 import "./Content.css";
 
@@ -40,9 +40,6 @@ function Content(props) {
 
   return (
     <>
-
-     
-      
       <div className="Content">
         <div
           className="slideshow-slider"
